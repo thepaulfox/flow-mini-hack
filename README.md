@@ -18,7 +18,8 @@ Take the code in this repo and try to move as much of it as you can to flows. If
 2. Deploy the contents of the repo `sfdx force:source:push`
 3. Create or edit at least one user to have Available for Leads = True
 4. Create a queue for web leads
-5. Create a Lead and specify a Lead Source and then assign it to the queue to see routing and scoring working. 
+5. Create a Lead and edit the Lead Source, Email, or Phone fields to see lead scoring in action.
+6. Create a Lead and assign it to any queue to see the routing in action. 
 
 ### Resources
 
