@@ -26,6 +26,10 @@ public without sharing class LeadService {
             Integer salesPersonIndex = Math.mod(i,activeSalesPeople.size());
             lead.OwnerId = activeSalesPeople[salesPersonIndex].Id;
         }
+
+        Database.DMLOptions dmlOptions = new Database.DMLOptions();
+        dmlOptions.emailHeader.triggerUserEmail = true;
+        Database.update(leadsToRoute,dmlOptions);
     }
 
     /**
