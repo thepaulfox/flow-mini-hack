@@ -12,6 +12,14 @@ Universal Containers gets a lot of Leads through their website. When a new Lead 
 
 Take the code in this repo and try to move as much of it as you can to flows. For the lead scoring logic, use invocable apex to call the lead scoring (and give the admin some inputs to customize it if you can). 
 
+### Getting Started
+
+1. Create a scratch org `sfdx force:org:create`
+2. Deploy the contents of the repo `sfdx force:source:push`
+3. Create or edit at least one user to have Available for Leads = True
+4. Create a queue for web leads
+5. Create a Lead and specify a Lead Source and then assign it to the queue to see routing and scoring working. 
+
 ### Resources
 
 - [Summer '20 Flow Release Notes](https://releasenotes.docs.salesforce.com/en-us/summer20/release-notes/rn_forcecom_flow.htm)
