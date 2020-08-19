@@ -10,7 +10,7 @@ Why would you want to move logic from triggers to flows? Well, in flows admins c
 
 Universal Containers gets a lot of Leads through their website. When a new Lead comes in to the website Queue, a trigger scores the lead, routes the lead via round robin to an available sales person, and notifies that person of the assignment.
 
-Take the code in this repo and try to move as much of it as you can to flows. For the lead scoring logic, use invocable apex to call the lead scoring (and give the admin some inputs to customize it if you can). 
+Take the code in this repo and try to move as much of it as you can to flows. If there's something you can't do in flows, use invocable apex to call the logic from the flow. 
 
 ### Getting Started
 
